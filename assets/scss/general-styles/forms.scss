@@ -1,0 +1,63 @@
+//- FORMS
+
+
+[type=phone] {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 2.4375rem;
+  margin: 0 0 1rem;
+  padding: .5rem;
+  border: 1px solid #cacaca;
+  border-radius: 0;
+  background-color: #fefefe;
+  box-shadow: inset 0 1px 2px hsla(0, 0%, 4%, 0.1);
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #0a0a0a;
+  transition: box-shadow .5s, border-color .25s ease-in-out;
+  appearance: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aaa;
+}
+
+input {
+
+  &#mce-FNAME::placeholder,
+  &#mce-LNAME::placeholder,
+  &#mce-EMAIL::placeholder {
+    color: #aaa;
+  }
+}
+
+#page #mc_embed_signup .button {
+  background-color: $dark-gray !important;
+  color: #fff;
+  border-radius: 2em;
+  transition: all 150ms;
+  text-transform: uppercase;
+
+  font-family: $base-font, $backup-fonts;
+
+  &.dark:hover {
+    background-color: $dark-gray;
+    color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+}
+
+input[type="submit"] {
+  background-color: $base-color;
+  padding: 1rem;
+  color: white;
+  border: 0px;
+
+  &:hover {
+    background-color: black;
+  }
+}

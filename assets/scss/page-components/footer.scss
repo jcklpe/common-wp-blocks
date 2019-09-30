@@ -1,0 +1,36 @@
+/*********************
+15. FOOTER STYLES
+*********************/
+.footer {
+    clear: both;
+    margin-top: 0em;
+    padding-top: 1em;
+    background-color: $base-color;
+    color: #fff;
+
+    a {
+        color: #fff;
+
+        &:hover {
+            background-color: #000;
+            color: #fff;
+        }
+    }
+
+    h4 {
+        background-color: #000;
+        color: #fff;
+        display: inline-block;
+        padding: 0.25em 1em;
+        font-weight: 400;
+        font-family: $base-font, $backup-fonts;
+    }
+}
+
+#footer .sidebar .widget {
+    text-align: center;
+
+    div {
+        text-align: left;
+    }
+}

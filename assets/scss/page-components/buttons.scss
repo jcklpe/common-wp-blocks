@@ -1,0 +1,141 @@
+//- BUTTONS
+
+a.button,
+a.tribe-events-button {
+  border-radius: 30px !important;
+
+  &.dark {
+    background-color: $dark-gray;
+  }
+}
+
+a.tribe-events-button {
+  background-color: $dark-gray !important;
+}
+
+div.wp-block-button {
+  display: inline-block;
+  margin: 0 6px 10px 0;
+
+  a {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px 30px 10px;
+    font-family: $base-font,
+      Roboto,
+      Helvetica,
+      Arial,
+      sans-serif,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol";
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 1.0625rem;
+    border: none;
+    cursor: pointer;
+    transition: all 150ms;
+
+    &:hover {
+      // background: $base-color;
+      transform: translateY(-2px);
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    &.has-base-background-color {
+      background-color: $base-color;
+
+      &:hover {
+        background-color: $base-color-bright;
+      }
+    }
+
+    &.has-dark-gray-background-color {
+      background-color: $dark-gray;
+
+      &:hover {
+        background-color: $dark-gray-bright;
+      }
+    }
+  }
+
+}
+
+a.button.radius.button-white {
+  border: none;
+  color: black;
+}
+
+.button-group.expanded .button {
+  padding: 0.85em 0.5em;
+}
+
+
+//- Pagination buttons
+button,
+.button,
+input[type="button"],
+.pagination .button {
+  background-color: $base-color;
+  color: #fff;
+  // border-radius: 2em;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  transition: all 150ms;
+  // text-transform: uppercase;
+  font-family: $base-font, $backup-fonts;
+  font-weight: bold;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+button.hollow,
+.button.hollow,
+input[type="button"],
+.pagination .button.hollow {
+  background-color: #fff;
+  border: 2px solid $base-color;
+  color: $base-color;
+}
+
+.pagination .current {
+  padding: .1875rem .625rem;
+  background-color: $base-color;
+}
+
+.pagination .button a,
+.pagination .button a:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+button.hollow:hover,
+.button.hollow:hover,
+.button:focus,
+.button:hover,
+input[type="button"]:hover,
+.pagination .button:hover {
+  background-color: #f04e54;
+  color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+//- SHARE BUTTON
+
+#content #inner-content {
+  .share-button {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+  }
+
+  .button.share-button {
+    padding: 0.75rem;
+
+    .button-icon {
+      width: 1.5rem;
+      height: auto;
+    }
+  }
+}

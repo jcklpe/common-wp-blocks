@@ -1,0 +1,129 @@
+//- MENU AND NAVIGATION
+.top-bar {
+  padding: 0;
+  background-color: $base-color;
+
+  .title-area {
+    z-index: 1;
+  }
+
+  ul {
+    background-color: $base-color;
+  }
+
+  a,
+  ul a {
+    color: white;
+  }
+}
+
+.off-canvas-list ul {
+  margin-left: 0;
+
+  li a {
+    border-bottom: 0px;
+  }
+
+  .dropdown {
+    margin-left: 20px;
+  }
+}
+
+
+.off-canvas {
+  background-color: $base-color;
+}
+
+
+
+.top-bar-right a,
+.off-canvas .menu>li>a {
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  color: white;
+}
+
+.dropdown.menu.vertical>li.opens-left>a:after,
+.is-accordion-submenu-parent>a:after {
+  border-color: $base-color transparent transparent !important;
+}
+
+.page-title {
+  color: $dark-gray;
+  margin: 4rem 0 3rem 0;
+}
+
+
+
+
+
+.top-bar a:hover,
+.menu .active a {
+  background: $dark-gray;
+}
+
+
+
+.menu {
+  >li>a.top-name {
+    display: inline-block;
+    padding: 1rem 0 1rem 0.35rem;
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+
+  &.vertical>li {
+    padding-top: 0;
+  }
+
+  >li.active>a {
+    background: white;
+    color: $base-color;
+
+    &:hover {
+      color: $base-color;
+      background-color: white;
+    }
+  }
+}
+
+.off-canvas .menu>li>a:hover,
+.top-bar-right a:hover {
+  color: $base-color;
+  background-color: white;
+}
+
+.top-bar {
+
+  a:hover,
+  ul a:hover {
+    color: $base-color;
+    background-color: white;
+  }
+}
+
+#menu-footer.menu>li {
+  width: 45%;
+  display: inline-block;
+}
+
+.menu>li>a.top-name:hover {
+  background-color: $base-color;
+  color: white;
+}
+
+.menu {
+
+  li {
+
+    a {
+      padding: 1rem;
+      line-height: 1;
+      font-size: 1.2rem;
+    }
+
+    img {
+      margin: 20px;
+    }
+  }
+}

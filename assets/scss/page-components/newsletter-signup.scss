@@ -1,0 +1,118 @@
+.newsletter-signup {
+    background: #f7f7f7 url("../../images/ui-glyphs/stripes-red.svg") repeat-x left bottom !important;
+    background-size: 18px 16px !important;
+    order: 1;
+    margin-top: -5rem;
+
+    .grid-x {
+        padding: 40px 0 12px;
+
+    }
+
+    figure {
+        max-width: 145px;
+        margin: 0 auto 30px;
+    }
+
+    .fields {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-family: $base-font, Roboto,
+Helvetica,
+Arial,
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol";
+        font-size: 1.875rem;
+        font-weight: 500;
+        line-height: 1.05;
+        margin-bottom: 41px;
+    }
+
+
+    input {
+        &[type="text"],
+        &[type="email"] {
+            border: none;
+            color: black;
+            font-family: $base-font, $backup-fonts;
+            display: inline-block;
+            text-align: center;
+            width: 45%;
+            background: white;
+            padding: 11px 10px 11px;
+            border-radius: 50px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.05);
+        }
+
+        &[type="email"] {
+            width: 100%;
+        }
+
+        &::placeholder,
+        &#mce-FNAME::placeholder,
+        &#mce-LNAME::placeholder,
+        &#mce-EMAIL::placeholder {
+            color: #aaa;
+        }
+
+        &[type="submit"] {
+            display: inline-block;
+            text-transform: uppercase;
+            color: white;
+            padding: 12px 30px 12px;
+            background: $base-color;
+            font-family: $base-font, $backup-fonts;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 1.0625rem;
+            border: none;
+            cursor: pointer;
+            transition: all 150ms;
+
+            &.small {
+                padding: 6px 13px 3px;
+            }
+
+            &:hover {
+                background: $base-color-bright;
+                transform: translateY(-2px);
+                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+            }
+
+            &.dark {
+                background: $dark-gray;
+
+                &:hover {
+                    background: black;
+                    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+                }
+            }
+        }
+    }
+
+
+    @include breakpoint(desktop) {
+        .pairing {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        figure {
+            width: 29.116465863454%;
+            margin: 0 auto;
+        }
+
+        .form {
+            width: 61.847389558233%;
+            margin: 0;
+        }
+    }
+}

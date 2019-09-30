@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+//- Font Variables
+
+$base-font: 'Manifold DSA';
+$backup-fonts: 'Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"';
+
+
+//- Load Fonts
+
+
+//TODO: variablize font hierarchy stuff to make it easier to change out fonts
+@font-face {
+  font-family: $base-font;
+  font-display: fallback;
+  src: url('../../fonts/ManifoldDSA-Bold.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../../fonts/ManifoldDSA-Bold.woff') format('woff'),
+    /* Pretty Modern Browsers */
+    url('../../fonts/ManifoldDSA-Bold.ttf') format('truetype');
+  /* Safari, Android, iOS */
+  font-weight: bold;
+  font-weight: 600;
+
+}
+
+
+@font-face {
+  font-family: $base-font;
+  font-display: fallback;
+  src: url('../../fonts/ManifoldDSA-Medium.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../../fonts/ManifoldDSA-Medium.woff') format('woff'),
+    /* Pretty Modern Browsers */
+    url('../../fonts/ManifoldDSA-Medium.ttf') format('truetype');
+  /* Safari, Android, iOS */
+  font-weight: normal;
+  font-weight: 400;
+  font-style: normal;
+}

@@ -1,0 +1,55 @@
+//- Functions
+@import 'general-styles/color-variables';
+@import 'functions/responsive-mixins';
+@import 'functions/utility-classes';
+
+//- Vendor styles
+@import '../../vendor/foundation-sites/dist/css/foundation-flex.css';
+@import '../../vendor/foundation-sites/dist/css/foundation.css';
+
+
+//- General Styles
+// general styles that apply on a broad based stylistic level that isn't contained to just one component or piece of UI. Type and palette hiearchies should go here.
+
+@import 'general-styles/fonts';
+@import 'general-styles/general-styles';
+@import 'general-styles/h1-h6-styles';
+@import 'general-styles/link-styles';
+@import 'general-styles/post-and-content';
+@import 'general-styles/card';
+@import 'general-styles/print-styles';
+@import 'general-styles/forms';
+@import 'general-styles/tables';
+
+
+//- Page Components
+// components which are generally self contained and exist outside of normal post content context. These are largely brought over from the original theme project this was forked from. Eventually this section should be completely converted over to pure "blocks".
+@import 'page-components/accordion';
+@import 'page-components/buttons';
+@import 'page-components/comments';
+@import 'page-components/footer';
+@import 'page-components/image-gallery';
+@import 'page-components/menu-and-nav';
+@import 'page-components/sidebar';
+@import 'page-components/tabs';
+@import 'page-components/hero';
+@import 'page-components/content-card';
+@import 'page-components/page-navigation';
+@import 'page-components/newsletter-signup';
+@import 'page-components/text-carousel-card';
+@import 'page-components/alert';
+@import 'page-components/sections';
+@import 'page-components/tribe-events';
+@import 'page-components/events-section';
+@import 'page-components/event-page-single';
+
+
+//- Page Templates
+// full on page wide template
+@import 'page-templates/calendar-and-events';
+
+
+
+
+//- Blocks
+// as much styling should be contained to individual component level stylings defined and used through gutenberg blocks content editor, so as to ensure maximum usability for non devs.

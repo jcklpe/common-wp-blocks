@@ -1,11 +1,11 @@
 {
-  "name": "05-media-block",
+  "name": "common-block",
   "mode": "production",
   "version": "1.0.0",
   "description": "test",
   "repository": {
     "type": "git",
-    "url": "git://github.com/jcklpe/Jackalope-Gutenberg"
+    "url": "git://github.com/jcklpe/common-wp-blocks"
   },
   "main": "block.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "dev": "cross-env BABEL_ENV=default webpack --watch"
   },
   "author": "jcklpe",
-  "license": "ISC",
+  "license": "gpl non capitalist clause",
   "devDependencies": {
     "@babel/core": "^7.1.6",
     "@babel/plugin-transform-react-jsx": "^7.1.6",
