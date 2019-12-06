@@ -19,4 +19,4 @@ These blocks are built with webpack as per normal Wordpress Gutenberg Block buil
 
 ## License
 
-This theme uses modified version of GPL 3 which restricts use and distribution of this software to non-profit non-capitalist uses.
+licensed under Cooperative Work License v1.0
